@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<title></title>
+		<style type="text/css">
+			.h1 {
+				font-size: 40px; 
+				text-align: center;
+				}
+			.button {
+				text-align: center;
+				width: 75px; /* 宽度 */
+				height: 30px; /* 高度 */
+				border-width: 0px; /* 边框宽度 */
+				border-radius: 3px; /* 边框半径 */
+				/* background: #1E90FF; /* 背景颜色 */ */
+				/* 	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */ */
+				outline: none; /* 不显示轮廓线 */
+				font-family: Microsoft YaHei; /* 设置字体 */
+				/* color: white; /* 字体颜色 */ */
+				font-size: 20px; /* 字体大小 */
+				
+
+				}
+			div {font-size: 20px;
+				padding-left: 20px;
+				padding-right: 20px;
+				}
+		</style>
+	</head>   
+<body>
+    <table>
+    <h1 class=h1>调查问卷</h1>
+    <div>您好！欢迎参与我们的调查，此问卷仅用于学术研究，我们将对您所填写的信息严格保密。<br>
+        请仔细阅读下面的题目，根据您的实际情况作答，问卷所有的问题都不存在正确或错误的答案。<br>
+        请您填写此问卷时，细心阅读各项指示语，真实地表达您的感受，您的认真参与将是我们研究成功的关键。<br>
+        本问卷共包括两个部分，大概需要花费您8分钟的时间！</div>
+  <!--  <input type="button" value="我已知晓" id="intro" onclick="np()"> -->
+	<!-- <a href="#" onclick="this.href='study1-'+parseInt(Math.random()*2)+'.html'">我已知晓</a> -->
+	<input type="button" 
+		class="button"
+		align="right"
+		value="我已知晓" 
+		onclick="window.location.href='study'+parseInt(Math.random()*2)+'.html'">
+    </table>
+</body>       
