@@ -7,8 +7,9 @@
 		<script type="text/javascript" src="js/sm.js"></script>
 		<style type="text/css">
 				.h {
-					font-size: 20px; 
+					font-size: 18px; 
 					text-align: center;
+					background-color: aliceblue;
 					}
 		        p {
 					text-indent:2em;
@@ -21,6 +22,7 @@
 						border: solid 1px black;
 						margin-left: 20px;
 						margin-right: 20px;
+						background-color: #F0F8FF;
 					}
 				.ques {
 					padding-left: 20px;
@@ -34,7 +36,7 @@
 						float: left;
 						position: relative;
 									}
-				#button {
+				button {
 					vertical-align: middle;
 					text-align-last: center;
 					width: 75px; /* 宽度 */
@@ -50,9 +52,10 @@
 		</style>
 	</head>
 <body>
+	<table>
 	<h1 class=h>第一部分</h1>
 	<p><strong>本部分旨在考察人们如何对虚构情景进行想象以及有何体验。<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 请您仔细阅读以下短文，并设想自己是短文中的主人公，体会在此情此境中的感觉，融入其中，并根据真实感受回答相关问题。
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 请您仔细阅读以下短文，体会在此情此境中的感觉，融入其中，并根据真实感受回答相关问题。
 	</strong></p>
 	
     <table>
@@ -62,7 +65,7 @@
 			</td>
 		</tr>
 		<div id="m">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已知甲是一名高级经理，他的年收入在18-20万左右，而乙是一名普通员工，他的年收入在5-6万左右。<br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他们两人都购买了B公司的股票。去年他们把B公司的股票卖掉，转而购买A公司的股票。<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他们两人都购买了B公司的股票。去年他们把B公司的股票<strong>卖掉</strong>，<strong>转而购买</strong>A公司的股票。<br>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在年末时，他们发现A公司收益平平，而B公司股价大涨，能够给投资者带来丰厚的回报。
 		</div>
 		<form action="" method="">
@@ -89,7 +92,7 @@
 				</td>
 		   </tr>
 			<tr>
-				<td class=ques>2.如果你是甲，你会觉得有多后悔？请选择
+				<td class=ques>2.如果你是<strong>甲</strong>，你会觉得有多后悔？请选择
 				<select name="jiaregret" id="jr" required="">
 					<option style='display: none'></option>
 					<option value="1">1</option>
@@ -141,13 +144,12 @@
 		<h2 class=h>第二部分</h2>
 				<table>
 				<p><strong>本部分旨在考察您的成长环境和生活状况，请根据真实想法和感受回答下面的问题，并选择相应的数字。</strong></p>
-				<div><img src="chingliu12.github.com/ladder.png" alt="">
-		     下图是一个10级的阶梯，这个梯子代表了中国人所处的不同社会经济地位，从第1级到第10级，梯子的等级越高，代表所处的社会经济地位越高。<br>
-		     处在梯子顶部（10 级）的人群是最优裕的，他们最富有、受教育程度最高，工作最体面；
-		     处在梯子底部（1 级）的人群是最糟糕的，他们最贫穷、受教育程度最低、工作最不体面或没有工作。<br>
-		     接下来，请将您自己的生活情况，并从经济状况、受教育程度、生长环境等方面仔细思考并作答。<br><br>
-				<form action="" method="post">
-						<b>您认为自己在梯子的什么位置（1级为最低，10级为最高）？请选择：
+				<div><img src="img/ladder.png" alt="">
+		     左图是一个10级的阶梯，这个梯子代表了中国人所处的不同社会经济地位，从第1级到第10级，梯子的等级越高，代表所处的社会经济地位越高。<br>
+		     处在<strong>梯子顶部（10 级）</strong>的人群是最优裕的，他们最富有、受教育程度最高，工作最体面；
+		     处在<strong>梯子底部（1 级）</strong>的人群是最糟糕的，他们最贫穷、受教育程度最低、工作最不体面或没有工作。<br>
+		     接下来，请将您自己的生活情况，并从<u>经济状况</u>、<u>受教育程度</u>、<u>生长环境</u>等方面仔细思考并作答。<br><br>
+						<b>您认为自己在梯子的什么位置（1级为最低，10级为最高）？请选择：</b> 
 							<select name="ladder" id="" required="">
 						<option style='display: none'></option>
 						<option value="1">1</option>
@@ -161,55 +163,59 @@
 						<option value="9">9</option>
 						<option value="10">10</option>
 							</select>
-						</b> 
-				</form>
+						
 			</div>
 				</table>
 				
-	<p align="left"><strong>最后，请您再填写一些基本信息。</strong></p>
+	<p style="text-indent:none"><strong>最后，请您再填写一些基本信息。</strong></p>
 	<div>
-	<form action="">
 	<table>
-		<tr>
-			<td>1.性别：
-			<input type="radio" name="sex" value="0">男
-			<input type="radio" name="sex" ：value="1">女
-		</td>
-		<tr>
-			<td>2.年龄：
-			<input type="text" name="age" min="16" oninput = "value=value.replace(/[^\d]/g,'')" maxlength="2" >
-		</td>
-		<tr>
-			<td>3.年级：
-			<input type="radio" name="grade" value="1">大一
-			<input type="radio" name="grade" value="2">大二
-			<input type="radio" name="grade" value="3">大三
-			<input type="radio" name="grade" value="4">大四
-			<input type="radio" name="grade" value="5">研究生及以上
-		</td>
-		<tr>
-			<td>4.专业：
-			<select name="major" id="" required="">
-	    <option value="1">哲学</option>
-	    <option value="2">经济学</option>
-	    <option value="3">法学</option>
-	    <option value="4">教育学</option>
-	    <option value="5">文学</option>
-	    <option value="6">历史学</option>
-	    <option value="7">理学</option>
-	    <option value="8">工学</option>
-	    <option value="9">农学</option>
-	    <option value="10">医学</option>
-	    <option value="11">管理学</option>
-	    <option value="11">艺术学</option>
-		</select>
+			<tr>
+				<td>1.性别：
+				<input type="radio" name="sex" value="0" required="">男
+				<input type="radio" name="sex" ：value="1" required="">女
 			</td>
-		</tr>
+			<tr>
+				<td>2.年龄：
+				<input type="text" name="age" min="16" oninput = "value=value.replace(/[^\d]/g,'')" maxlength="2" placeholder="请输入您的年龄" type="text" name="age" min="16" 
+					oninput = "value=value.replace(/[^\d]/g,'')" 
+					maxlength="2" 
+					placeholder="请输入您的年龄" 
+					autocomplete="off" 
+					required="" >
+			</td>
+			<tr>
+				<td>3.年级：
+				<input type="radio" name="grade" value="1" required="">大一
+				<input type="radio" name="grade" value="2" required="">大二
+				<input type="radio" name="grade" value="3" required="">大三
+				<input type="radio" name="grade" value="4" required="">大四
+				<input type="radio" name="grade" value="5" required="">研究生及以上
+			</td>
+			<tr>
+				<td>4.专业：
+				<select name="major" id="" required="">
+			<option style='display: none'></option>
+		    <option value="1">哲学</option>
+		    <option value="2">经济学</option>
+		    <option value="3">法学</option>
+		    <option value="4">教育学</option>
+		    <option value="5">文学</option>
+		    <option value="6">历史学</option>
+		    <option value="7">理学</option>
+		    <option value="8">工学</option>
+		    <option value="9">农学</option>
+		    <option value="10">医学</option>
+		    <option value="11">管理学</option>
+		    <option value="11">艺术学</option>
+			</select>
+				</td>
+			</tr>
+		</table>
+		</div>
 	</table>
-	</div>
-<tr>
-	<td>
-		<input type="submit" id="button">
-	</td>
-</tr>
-</body>
+	<tr>
+		<td>
+			<button type="submit" id="btn">提交</button>
+		</td>
+	</tr>
